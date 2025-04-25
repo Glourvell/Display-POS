@@ -1,7 +1,7 @@
 body{
     background: #9bd2e8;
     background: linear-gradient(90deg, rgba(155, 210, 232, 1) 0%, rgba(255, 120, 133, 1) 50%, rgba(237, 83, 232, 1) 100%);
-
+    background-repeat: no-repeat;
 }
 h1{
     font-family: "Oswald", sans-serif;
@@ -64,7 +64,7 @@ h3{
 }
 .box{
     width:400px;
-    height:400px;
+    height:420px;
     border:none;
     border-radius:25px;
     background: rgba(255, 255, 255, 0.2);
@@ -77,11 +77,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     align-content:normal;
     
 }
+
+.word-row{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+}
 .inner{
     /* From https://css.glass */
+background-color: white;
 
 
-    background-color:white;
     width: 345px;
     height: 300px;
     margin-left: 25px;
@@ -95,11 +101,25 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     padding-left:20px;
 }
 .price{
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
 .products{
     justify-content: space-around;
+}
+
+/* button */
+.view{
+    
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: orange;
+    border: 1px solid ;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
 }
